@@ -226,6 +226,24 @@ body {
     cursor: pointer;
 }
 
+.contact-btn {
+    display: inline-block;
+    background-color: #00d084;
+    color: #08111f;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3ease;
+}
+
+.contact-btn:hover {
+    background-color: #ffffff;
+    color: #08111f;
+    trandform: translateY(-3px)
+}
+
 .footer {
     padding: 30px 8%;
     border-top: 1px solid #444;
