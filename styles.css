@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links a {
+    color: #4ee1a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.hero-image {
+    width: 350PX;
+    height: 350px;
+    flex-shrink:0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: block;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #4ee1a0;
+}
+
+.hero-content p {
+    color: #d9d9d9;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4ee1a0;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    color: #4ee1a0;
+}
+
+.project {
+    padding: 80px 8%;
+}
+
+.project h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.project p {
+    color: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4ee1a0;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.project a:hover {
+    color: #4ee1a0;
+}
+
+.skills {
+    padding: 80px 8%;
+    border-top: 1px solid #444;
+}
+
+.skills h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.Skill h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    color: #d9d9d9;
+    line-height: 1.6;
+}
+
+.contact {
+    padding: 80px 8%;
+    background-color:#242424;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #d9d9d9;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    background-color: #151515;
+    border: 1px solid #555;
+    color: white;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #4ee1a0;
+    color: #151515;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 30px 8%;
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.footer h2 {
+    font-size: 25px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: #4ee1a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: white;
+}
+
+.footer p {
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .projects-container,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
